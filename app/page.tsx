@@ -22,7 +22,7 @@ export default function Home() {
           <p className="text-white text-center w-2/3 font-medium">
             Sorry for the inconvenience. We are currently working on this site.
             Our website is coming soon. Enter your e-mail below and we’ll notice
-            you when it’s ready. In the meantime, check our facebook and twitter
+            you when it&apos;s ready. In the meantime, check our facebook and twitter
             accounts.
           </p>
           <div className="flex items-center gap-2">
@@ -64,7 +64,7 @@ export default function Home() {
           your daily life. We bring you the convenience of managing essential
           services all in one place, offering a seamless experience for food,
           daily utilities, investments, rides, payments, and clothing. Whether
-          you're grabbing a meal, making an investment, booking a ride, shopping
+          you&apos;re grabbing a meal, making an investment, booking a ride, shopping
           for your wardrobe, or paying bills – we’ve got you covered.
           <br />
           Our Vision
