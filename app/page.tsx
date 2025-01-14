@@ -5,7 +5,7 @@ import Instagram from "@/app/assets/instagram.png";
 import Email from "@/app/assets/email.png";
 import Linkedin from "@/app/assets/linkedin.png";
 import Facebook from "@/app/assets/facebook.png";
-import Twitter from "@/app/assets/twitter.png";
+// import Twitter from "@/app/assets/twitter.png";
 import Link from "next/link";
 
 export default function Home() {
