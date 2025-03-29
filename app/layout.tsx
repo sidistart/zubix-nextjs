@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,6 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Zubix</title>
+        <meta name="description" content="Zubix - The super app" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="fast2sms" content="NRU4XhNSXXlgTT6uehUZPxE1WaVvw7Qk" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center items-center min-h-screen`}
       >
