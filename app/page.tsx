@@ -75,7 +75,7 @@ export default function Home() {
         <div className="absolute w-[304px] h-[304px] left-[1067px] top-[373px] bg-gradient-to-r from-[#97C42C] to-[#A7D930] rounded-full"></div>
         </div> */}
 
-          <p className="font-semibold text-5xl ">About US</p>
+          <p className="font-semibold text-5xl ">About Us</p>
           <p className="w-2/3 text-[#181818] text-xl leading-10">
             At Zubix, we are dedicated to revolutionizing the way you manage
             your everyday needs. Founded by a team of passionate innovators, we
