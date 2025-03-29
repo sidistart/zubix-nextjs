@@ -7,17 +7,17 @@ import Linkedin from "@/app/assets/linkedin.png";
 import Facebook from "@/app/assets/facebook.png";
 // import Twitter from "@/app/assets/twitter.png";
 import Link from "next/link";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Zubix',
+  description: 'Zubix - The super app',
+  viewport: 'width=device-width, initial-scale=1',
+  'fast2sms': 'NRU4XhNSXXlgTT6uehUZPxE1WaVvw7Qk',
+}
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Zubix</title>
-        <meta name="description" content="Zubix - The super app" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="fast2sms" content="NRU4XhNSXXlgTT6uehUZPxE1WaVvw7Qk" />
-      </Head>
       <div className="flex flex-col w-full">
         <div className="flex h-screen w-full z-10 relative">
           <Image alt="bg" src={Logo} fill />
