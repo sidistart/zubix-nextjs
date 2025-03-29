@@ -12,7 +12,7 @@ export const metadata = {
   title: 'Zubix',
   description: 'Zubix - The super app',
   viewport: 'width=device-width, initial-scale=1',
-  'fast2sms': 'NRU4XhNSXXlgTT6uehUZPxE1WaVvw7Qk',
+  fast2sms: 'NRU4XhNSXXlgTT6uehUZPxE1WaVvw7Qk',
 }
 
 export default function Home() {
