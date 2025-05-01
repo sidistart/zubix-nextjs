@@ -9,32 +9,32 @@ import {
 } from "react-icons/fa";
 
 const AboutPage = () => {
-  const teamMembers = [
-    {
-      name: "Sarah Chen",
-      role: "CEO & Co-Founder",
-      bio: "Former fintech executive with 15+ years of experience in digital banking and financial inclusion initiatives.",
-      image: "/team-1.jpg", // Placeholder image path
-    },
-    {
-      name: "Michael Rodriguez",
-      role: "CTO & Co-Founder",
-      bio: "Tech innovator with background in AI and machine learning, focused on creating secure and intuitive financial technologies.",
-      image: "/team-2.jpg",
-    },
-    {
-      name: "Aisha Patel",
-      role: "Chief Product Officer",
-      bio: "Product strategist specializing in user-centered design and financial product development for diverse audiences.",
-      image: "/team-3.jpg",
-    },
-    {
-      name: "David Okoro",
-      role: "Head of Finance",
-      bio: "Certified financial analyst with expertise in risk management and sustainable financial growth strategies.",
-      image: "/team-4.jpg",
-    },
-  ];
+  // const teamMembers = [
+  //   {
+  //     name: "Sarah Chen",
+  //     role: "CEO & Co-Founder",
+  //     bio: "Former fintech executive with 15+ years of experience in digital banking and financial inclusion initiatives.",
+  //     image: "/team-1.jpg", // Placeholder image path
+  //   },
+  //   {
+  //     name: "Michael Rodriguez",
+  //     role: "CTO & Co-Founder",
+  //     bio: "Tech innovator with background in AI and machine learning, focused on creating secure and intuitive financial technologies.",
+  //     image: "/team-2.jpg",
+  //   },
+  //   {
+  //     name: "Aisha Patel",
+  //     role: "Chief Product Officer",
+  //     bio: "Product strategist specializing in user-centered design and financial product development for diverse audiences.",
+  //     image: "/team-3.jpg",
+  //   },
+  //   {
+  //     name: "David Okoro",
+  //     role: "Head of Finance",
+  //     bio: "Certified financial analyst with expertise in risk management and sustainable financial growth strategies.",
+  //     image: "/team-4.jpg",
+  //   },
+  // ];
 
   const values = [
     {
@@ -192,7 +192,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Team */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-16"
@@ -220,7 +220,6 @@ const AboutPage = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                {/* This would normally be an image, but we're using a placeholder */}
                 <div className="aspect-[4/3] bg-gray-200"></div>
                 <div className="p-6">
                   <h3 className="text-lg font-bold mb-1 text-gray-900">
@@ -233,10 +232,10 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Stats Section */}
-      <section className="py-20 bg-blue-900 text-white">
+      {/* <section className="py-20 bg-blue-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <motion.div
@@ -280,7 +279,7 @@ const AboutPage = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

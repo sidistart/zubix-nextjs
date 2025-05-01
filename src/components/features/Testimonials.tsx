@@ -89,19 +89,6 @@ const Testimonials = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-lg font-medium">
-            Join thousands of satisfied users who are taking control of their
-            finances with Zubix
-          </p>
-        </motion.div>
       </div>
     </section>
   );

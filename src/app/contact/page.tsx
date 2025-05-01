@@ -2,12 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaClock,
-} from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -101,9 +96,9 @@ const ContactPage = () => {
                         <p className="text-gray-600">
                           123 Finance Street
                           <br />
-                          New York, NY 10001
+                          38, Gayatri Nagar, Hiran Magri Sector -5
                           <br />
-                          United States
+                          Udaipur, Rajsthan, India - 313001
                         </p>
                       </div>
                     </div>
@@ -114,7 +109,7 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-900">Phone</h3>
-                        <p className="text-gray-600">+1 (555) 123-4567</p>
+                        <p className="text-gray-600">+91-9509919001</p>
                       </div>
                     </div>
 
@@ -124,11 +119,11 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-900">Email</h3>
-                        <p className="text-gray-600">support@zubix.com</p>
+                        <p className="text-gray-600">support@zubixapp.com</p>
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    {/* <div className="flex items-start">
                       <div className="text-blue-600 mt-1 mr-4">
                         <FaClock />
                       </div>
@@ -142,7 +137,7 @@ const ContactPage = () => {
                           Sunday: Closed
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="mt-8">
@@ -241,8 +236,8 @@ const ContactPage = () => {
                       <div className="text-3xl mb-3">✓</div>
                       <h3 className="text-xl font-bold mb-2">Thank you!</h3>
                       <p>
-                        Your message has been sent successfully. We&apos;ll respond
-                        as soon as possible.
+                        Your message has been sent successfully. We&apos;ll
+                        respond as soon as possible.
                       </p>
                       <button
                         onClick={() => setIsSubmitted(false)}
@@ -369,7 +364,7 @@ const ContactPage = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-12 bg-gray-50">
+      {/* <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="bg-gray-200 rounded-xl h-[400px] flex items-center justify-center">
@@ -377,10 +372,10 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -471,7 +466,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

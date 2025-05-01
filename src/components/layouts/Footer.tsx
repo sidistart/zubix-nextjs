@@ -1,12 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
   FaLinkedin,
-  FaChartLine,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -16,9 +16,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & About */}
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="flex items-center mb-4">
-              <FaChartLine className="h-8 w-8 text-primary" />
-              <span className="ml-2 text-xl font-bold text-white">Zubix</span>
+          <Link href="/" className="flex items-center">
+              <Image
+                src="/Logo.png"
+                alt="Zubix Logo"
+                width={36}
+                height={36}
+                className="h-14 w-14"
+                priority
+              />
+              <span
+                className="ml-2 text-xl font-bold text-white"
+              >
+                Zubix
+              </span>
             </Link>
             <p className="mb-4 text-sm">
               Smart financial management for everyone. Budget, pay bills,
@@ -148,17 +159,20 @@ const Footer = () => {
               Contact Us
             </h3>
             <ul className="space-y-2">
-              <li>123 Finance Street</li>
-              <li>New York, NY 10001</li>
-              <li>Email: support@zubix.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
+              <li>
+                38, Gayatri Nagar, Hiran Magri Sector -5,
+                <br /> Udaipur, Rajsthan, India - 313001
+              </li>
+              <li>Email: support@zubixapp.com</li>
+              <li>Phone: +91-9509919001</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm">
-            © {new Date().getFullYear()} Zubix. All rights reserved.
+            © {new Date().getFullYear()} Sushibh Empires Private Limited. All
+            rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6 text-sm">
             <a href="#" className="hover:text-primary transition-colors">

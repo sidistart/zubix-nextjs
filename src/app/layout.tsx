@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     "Manage your budget, pay bills, recharge, and get loans all in one place with Zubix fintech app",
   keywords:
     "fintech, budgeting, bill payments, loans, mobile recharge, financial management",
+  icons: {
+    icon: '/Logo.png',
+  },
 };
 
 export default function RootLayout({

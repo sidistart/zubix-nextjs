@@ -63,7 +63,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Manage budgets, pay bills, recharge services, and get loans, all
+              Manage budgeting and expense management, pay bills, recharge services, and get loans, all
               in one seamless app. Take control of your finances with Zubix.
             </motion.p>
 

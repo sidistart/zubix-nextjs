@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaBars, FaTimes, FaChartLine } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,10 +37,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <FaChartLine
-                className={`h-8 w-8 ${
-                  scrolled ? "text-primary" : "text-primary-light"
-                }`}
+              <Image
+                src="/Logo.png"
+                alt="Zubix Logo"
+                width={36}
+                height={36}
+                className="h-14 w-14"
+                priority
               />
               <span
                 className={`ml-2 text-xl font-bold ${

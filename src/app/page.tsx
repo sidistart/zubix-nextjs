@@ -17,9 +17,6 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Take Control of Your Finances?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-white/80">
-            Join thousands of users who manage their money smarter with Zubix.
-          </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button className="px-8 py-3 bg-white text-primary font-medium rounded-lg hover:bg-primary-light transition-colors">
               Download Now
