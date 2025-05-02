@@ -2,12 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -16,46 +11,52 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & About */}
           <div className="col-span-1 md:col-span-1">
-          <Link href="/" className="flex items-center">
-              <Image
-                src="/Logo.png"
-                alt="Zubix Logo"
-                width={36}
-                height={36}
-                className="h-14 w-14"
-                priority
-              />
-              <span
-                className="ml-2 text-xl font-bold text-white"
-              >
-                Zubix
-              </span>
+            <Link href="/" className="flex items-center mb-6">
+              <div className="p-0.5 bg-white rounded-lg mr-2">
+                <Image
+                  src="/Logo.png"
+                  alt="Zubix Logo"
+                  width={36}
+                  height={36}
+                  className="h-14 w-14"
+                  priority
+                />
+              </div>
+              <span className="ml-2 text-xl font-bold text-white">Zubix</span>
             </Link>
             <p className="mb-4 text-sm">
-              Smart financial management for everyone. Budget, pay bills,
+            Smart Finance, Better Life. Budget, pay bills,
               recharge, and get loans all in one app.
             </p>
             <div className="flex space-x-4 mt-4">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61556759227426"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 <FaFacebook />
               </a>
               <a
-                href="#"
+                href="https://x.com/Zubix_App"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 <FaTwitter />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/zubix.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 <FaInstagram />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/zubixapp/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 <FaLinkedin />
@@ -160,7 +161,7 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                38, Gayatri Nagar, Hiran Magri Sector -5,
+                38, Gayatri Nagar, Hiran Magri Sector - 5,
                 <br /> Udaipur, Rajsthan, India - 313001
               </li>
               <li>Email: support@zubixapp.com</li>
@@ -175,10 +176,13 @@ const Footer = () => {
             rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6 text-sm">
-            <a href="#" className="hover:text-primary transition-colors">
+            <Link
+              href="/privacyPolicy"
+              className="hover:text-primary transition-colors"
+            >
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
+            </Link>
+            <a href="/terms" className="hover:text-primary transition-colors">
               Terms of Service
             </a>
             <a href="#" className="hover:text-primary transition-colors">

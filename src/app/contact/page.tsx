@@ -45,7 +45,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="pt-24">
+    <div className="pt-16"> {/* Changed from pt-24 to pt-16 */}
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,9 +94,7 @@ const ContactPage = () => {
                       <div>
                         <h3 className="font-medium text-gray-900">Address</h3>
                         <p className="text-gray-600">
-                          123 Finance Street
-                          <br />
-                          38, Gayatri Nagar, Hiran Magri Sector -5
+                          38, Gayatri Nagar, Hiran Magri Sector - 5
                           <br />
                           Udaipur, Rajsthan, India - 313001
                         </p>

@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
+  const scrollToHowItWorks = () => {
+    const howItWorksSection = document.getElementById("how-it-works");
+    if (howItWorksSection) {
+      howItWorksSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="relative bg-gradient-to-r from-secondary-dark to-secondary overflow-hidden">
       {/* Animated background elements */}
@@ -63,8 +70,9 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Manage budgeting and expense management, pay bills, recharge services, and get loans, all
-              in one seamless app. Take control of your finances with Zubix.
+              Budgeting and expense management, pay bills, recharge services,
+              and get loans, all in one seamless app. Take control of your
+              finances with Zubix.
             </motion.p>
 
             <motion.div
@@ -73,6 +81,12 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
+              <button
+                onClick={scrollToHowItWorks}
+                className="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                Get Started
+              </button>
               <Link href="/features">
                 <span className="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors inline-block">
                   Explore Features

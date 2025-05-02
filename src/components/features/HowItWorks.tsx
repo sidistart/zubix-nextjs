@@ -39,7 +39,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="how-it-works">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"

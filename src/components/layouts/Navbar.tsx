@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -8,27 +8,18 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrolled]);
+  const scrollToHowItWorks = () => {
+    const howItWorksSection = document.getElementById("how-it-works");
+    if (howItWorksSection) {
+      howItWorksSection.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false); // Close mobile menu if open
+  };
 
   return (
     <motion.nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/90 backdrop-blur-sm shadow-lg text-gray-900"
-          : "bg-transparent backdrop-blur-sm text-white"
-      }`}
+      className="fixed w-full z-50 transition-all duration-300 bg-white backdrop-blur-sm shadow-lg"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -45,31 +36,20 @@ const Navbar = () => {
                 className="h-14 w-14"
                 priority
               />
-              <span
-                className={`ml-2 text-xl font-bold ${
-                  scrolled ? "text-gray-900" : "text-white"
-                }`}
-              >
-                Zubix
-              </span>
+              <span className="ml-2 text-xl font-bold text-primary">Zubix</span>
             </Link>
           </div>
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
-              <NavLink href="/" scrolled={scrolled}>
-                Home
-              </NavLink>
-              <NavLink href="/features" scrolled={scrolled}>
-                Features
-              </NavLink>
-              <NavLink href="/about" scrolled={scrolled}>
-                About
-              </NavLink>
-              <NavLink href="/contact" scrolled={scrolled}>
-                Contact
-              </NavLink>
-              <button className="ml-4 px-4 py-2 text-sm font-medium rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors">
+              <NavLink href="/">Home</NavLink>
+              <NavLink href="/features">Features</NavLink>
+              <NavLink href="/about">About</NavLink>
+              <NavLink href="/contact">Contact</NavLink>
+              <button
+                onClick={scrollToHowItWorks}
+                className="ml-4 px-4 py-2 text-sm font-medium rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors"
+              >
                 Get Started
               </button>
             </div>
@@ -78,11 +58,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`inline-flex items-center justify-center p-2 rounded-md ${
-                scrolled
-                  ? "text-gray-700 hover:text-primary"
-                  : "text-white hover:text-primary-light"
-              } focus:outline-none`}
+              className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-secondary focus:outline-none"
             >
               {isOpen ? (
                 <FaTimes className="h-6 w-6" />
@@ -107,7 +83,10 @@ const Navbar = () => {
             <MobileNavLink href="/about">About</MobileNavLink>
             <MobileNavLink href="/contact">Contact</MobileNavLink>
             <div className="pt-2">
-              <button className="w-full px-4 py-2 text-sm font-medium rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors">
+              <button
+                onClick={scrollToHowItWorks}
+                className="w-full px-4 py-2 text-sm font-medium rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors"
+              >
                 Get Started
               </button>
             </div>
@@ -121,20 +100,14 @@ const Navbar = () => {
 const NavLink = ({
   href,
   children,
-  scrolled,
 }: {
   href: string;
   children: React.ReactNode;
-  scrolled: boolean;
 }) => {
   return (
     <Link
       href={href}
-      className={`px-3 py-2 text-sm font-medium transition-colors ${
-        scrolled
-          ? "text-gray-700 hover:text-primary"
-          : "text-white hover:text-primary-light"
-      }`}
+      className="px-3 py-2 text-sm font-normal transition-colors text-secondary/90 hover:text-primary"
     >
       {children}
     </Link>
@@ -151,7 +124,7 @@ const MobileNavLink = ({
   return (
     <Link
       href={href}
-      className="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium transition-colors"
+      className="text-secondary hover:text-primary block px-3 py-2 text-base font-medium transition-colors"
     >
       {children}
     </Link>

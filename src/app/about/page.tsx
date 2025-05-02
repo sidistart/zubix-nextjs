@@ -64,7 +64,9 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="pt-24">
+    <div className="pt-16">
+      {" "}
+      {/* Changed from pt-24 to pt-16 */}
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,7 +91,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
       {/* Our Mission */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -114,14 +115,9 @@ const AboutPage = () => {
                 <p className="text-lg text-gray-600 mb-6">
                   We saw that many people struggled with managing multiple
                   financial tools across different platforms, often leading to
-                  missed payments, poor budgeting, and financial stress. That&apos;s
-                  why we created an all-in-one solution that brings clarity and
-                  control to personal finance.
-                </p>
-                <p className="text-lg text-gray-600">
-                  Since our founding in 2022, we&apos;ve helped over 500,000 users
-                  take control of their finances and build better financial
-                  habits.
+                  missed payments, poor budgeting, and financial stress.
+                  That&apos;s why we created an all-in-one solution that brings
+                  clarity and control to personal finance.
                 </p>
               </motion.div>
 
@@ -138,8 +134,8 @@ const AboutPage = () => {
                     Financial Inclusion
                   </h3>
                   <p className="text-gray-600">
-                    We&apos;re committed to providing financial tools that work for
-                    everyone, regardless of their financial background or
+                    We&apos;re committed to providing financial tools that work
+                    for everyone, regardless of their financial background or
                     literacy level.
                   </p>
                 </div>
@@ -148,7 +144,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* Our Values */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -190,7 +185,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* Our Team */}
       {/* <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -233,7 +227,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section> */}
-
       {/* Stats Section */}
       {/* <section className="py-20 bg-blue-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -254,7 +247,7 @@ const AboutPage = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold mb-2">$50M+</div>
+              <div className="text-4xl font-bold mb-2">$50M+</</div>
               <div className="text-blue-200">Bills Paid Monthly</div>
             </motion.div>
 

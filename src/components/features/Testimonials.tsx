@@ -5,7 +5,7 @@ import { FaQuoteLeft, FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Shivangi rajput",
     role: "Small Business Owner",
     image: "/images/avatar-1.jpg", // This is a placeholder, we'll handle it appropriately
     quote:
@@ -13,7 +13,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Michael Chen",
+    name: "Surendra",
     role: "Freelance Designer",
     image: "/images/avatar-2.jpg",
     quote:
@@ -21,7 +21,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Priya Sharma",
+    name: "Sahil thakur",
     role: "Graduate Student",
     image: "/images/avatar-3.jpg",
     quote:

@@ -61,7 +61,7 @@ const FeaturePage = () => {
       description:
         "Access quick personal loans when you need them most. With competitive interest rates, flexible repayment options, and a paperless application process, Zubix makes borrowing simple and transparent.",
       benefits: [
-        "Apply for loans up to $10,000 directly in the app",
+        "Apply for loans up to 5,00,000/- rupees directly in the app",
         "Get instant approval with minimal documentation",
         "Choose flexible repayment terms that fit your budget",
         "Enjoy competitive interest rates based on your profile",
@@ -85,7 +85,9 @@ const FeaturePage = () => {
   ];
 
   return (
-    <div className="pt-24">
+    <div className="pt-16">
+      {" "}
+      {/* Changed from pt-24 to pt-16 */}
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,16 +112,15 @@ const FeaturePage = () => {
           </div>
         </div>
       </div>
-
       {/* Features Navigation */}
-      <div className="sticky top-16 z-30 bg-white shadow-md">
+      <div className="sticky top-19 z-30 bg-white shadow-md">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex overflow-x-auto py-4 gap-4 scrollbar-hide">
+          <div className="flex overflow-x-auto py-4 gap-4 no-scrollbar">
             {features.map((feature) => (
               <a
                 key={feature.id}
                 href={`#${feature.id}`}
-                className="whitespace-nowrap px-5 py-2 rounded-full bg-gray-100 hover:bg-blue-100 hover:text-blue-700 transition-colors text-sm font-medium"
+                className="whitespace-nowrap px-5 py-2 rounded-full bg-gray-100 hover:bg-blue-100 hover:text-blue-700 transition-colors text-sm font-medium flex-shrink-0"
               >
                 {feature.title}
               </a>
@@ -127,7 +128,6 @@ const FeaturePage = () => {
           </div>
         </div>
       </div>
-
       {/* Detailed Features */}
       <div className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -202,7 +202,6 @@ const FeaturePage = () => {
           </div>
         </div>
       </div>
-
       {/* CTA Section */}
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
