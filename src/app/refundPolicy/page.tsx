@@ -55,7 +55,7 @@ const RefundPolicy: React.FC = () => {
             <Section title="1. Introduction">
               <p>
                 This Cancellation and Refund Policy outlines the terms and conditions for cancellations,
-                returns, and refunds related to transactions made through the Zubix app ("App") operated
+                returns, and refunds related to transactions made through the Zubix app (&quot;App&quot;) operated
                 by Sushibh Empires Private Limited. By using our services, you agree to comply with this policy.
               </p>
             </Section>
@@ -77,7 +77,7 @@ const RefundPolicy: React.FC = () => {
                   </a>.
                 </li>
                 <li>
-                  Refunds for payments to merchants are subject to the respective merchant's refund policy.
+                  Refunds for payments to merchants are subject to the respective merchant&apos;s refund policy.
                 </li>
               </ul>
             </Section>
